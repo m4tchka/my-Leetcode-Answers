@@ -1,4 +1,4 @@
-"https://leetcode.com/problems/fizz-buzz/description/"
+"https://leetcode.com/problems/fizz-buzz"
 
 /* 
     Notes: Practice Ternary operator more, when using the Not (!) operator with any operator except Equal to (==) or Strictly Equal to (===), need to wrap the whole conition statement with parentheses and put Not operator before the opening parenthesis.
