@@ -1,7 +1,7 @@
 "https://leetcode.com/problems/roman-to-integer"
 
 /* 
-    Notes: EXTREMELY manual solution
+    Notes: EXTREMELY manual
     
     Runtime: 185 ms, faster than 67.58% of JavaScript online submissions for Roman to Integer.
     Memory Usage: 46.8 MB, less than 77.81% of JavaScript online submissions for Roman to Integer.

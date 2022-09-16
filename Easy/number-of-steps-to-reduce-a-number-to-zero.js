@@ -1,7 +1,8 @@
 "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero"
 
 /* 
-Notes: Very slow for some reason ? Maybe use recursion idk
+Notes: Very slow
+Maybe use recursion idk
 
 Runtime: 100 ms, faster than 30.67% of JavaScript online submissions for Number of Steps to Reduce a Number to Zero.
 Memory Usage: 41.7 MB, less than 88.66% of JavaScript online submissions for Number of Steps to Reduce a Number to Zero.
