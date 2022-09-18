@@ -18,6 +18,15 @@ var lengthOfLastWord = function (s) {
     s = s.replace(wsRegex, "");
     ws2Regex = /\s{2,}/;
     s = s.replace(ws2Regex, " ");
-    arr = s.split(" ");
+    let arr = s.split(" ");
+    return arr[arr.length - 1].length;
+};
+
+// Trimmed down ver of above, removing wsRegex, ws2Regex variables and not mutating s twice
+var lengthOfLastWord = function (s) {
+    let arr = s
+        .replace(/^\s+|\s+$/g, "")
+        .replace(/\s{2,}/, " ")
+        .split(" ");
     return arr[arr.length - 1].length;
 };
