@@ -25,6 +25,9 @@ var countNegatives = function (grid) {
             count += (grid.length - i) * grid[i].length;
             break;
         }
+        if (grid[i][grid[i].length - 1] >= 0) {
+            continue;
+        }
         for (let j = 0; j < grid[i].length; j++) {
             if (grid[i][j] < 0) {
                 count += grid[i].length - j;
