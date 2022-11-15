@@ -17,3 +17,20 @@ var countNegatives = function (grid) {
     }
     return count;
 };
+
+var countNegatives = function (grid) {
+    let count = 0;
+    for (let i = 0; i < grid.length; i++) {
+        if (grid[i][0] < 0) {
+            count += (grid.length - i) * grid[i].length;
+            break;
+        }
+        for (let j = 0; j < grid[i].length; j++) {
+            if (grid[i][j] < 0) {
+                count += grid[i].length - j;
+                break;
+            }
+        }
+    }
+    return count;
+};
