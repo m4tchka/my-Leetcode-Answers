@@ -14,3 +14,5 @@
     }
     return sum == n
 };
+// TODO: Cool solution with AND & operator binary power of 2
+// https://leetcode.com/problems/power-of-two/solutions/2726139/js-bit-manipulation-with-explanation/
