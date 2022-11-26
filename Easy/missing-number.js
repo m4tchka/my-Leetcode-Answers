@@ -12,3 +12,9 @@ var missingNumber = function (nums) {
     }
     return nums.length;
 };
+
+var missingNumber = function(nums) {
+    let sum=nums.reduce((acc,cur)=>acc+cur)
+    let expectedSum = ((nums.length+1)*nums.length)/2
+    return expectedSum - sum
+};
