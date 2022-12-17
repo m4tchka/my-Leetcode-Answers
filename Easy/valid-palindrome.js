@@ -1,4 +1,4 @@
-"https://leetcode.com/problems/valid-palindrome/description/";
+"https://leetcode.com/problems/valid-palindrome/";
 
 /**
  * @param {string} s
@@ -22,3 +22,9 @@ var isPalindrome = function (s) {
     }
     return true;
 };
+function palindrome(str) {
+    return (
+        str.toLowerCase().replace(/\W|_/g, "").split("").reverse().join("") ==
+        str.toLowerCase().replace(/\W|_/g, "")
+    );
+}
