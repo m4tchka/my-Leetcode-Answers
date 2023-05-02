@@ -13,3 +13,9 @@ var runningSum = function(nums) {
     }
     return result
 };
+var runningSum = function(nums) {
+    return nums.reduce((acc,curr,ind)=>{
+        acc[ind]=(acc[acc.length-1]+curr);
+        return acc
+        },[0])
+};
