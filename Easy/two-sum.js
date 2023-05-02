@@ -1,4 +1,4 @@
-"https://leetcode.com/problems/two-sum"
+"https://leetcode.com/problems/two-sum";
 
 /* 
     Notes: Very slow solution
@@ -23,5 +23,15 @@ var twoSum = function (nums, target) {
                 continue;
             }
         }
+    }
+};
+var twoSum = function (nums, target) {
+    let m1 = new Map();
+    for (let i = 0; i < nums.length; i++) {
+        m1.set(nums[i], i);
+    }
+    for (let j = 0; j < nums.length; j++) {
+        if (m1.has(target - nums[j]) && m1.get(target - nums[j]) != j)
+            return [m1.get(target - nums[j]), j];
     }
 };
